@@ -14,7 +14,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // ignore: prefer_const_constructors
     return MaterialApp(
       title: 'Users_list',
       home: MyHomePage(),
@@ -70,13 +69,6 @@ class _MyHomePageState extends State<MyHomePage> {
           style: TextStyle(
               fontFamily: 'Courier', fontSize: 32.0, color: Colors.black87),
         ),
-        // centerTitle: true,
-        // flexibleSpace: Container(
-        //   decoration: const BoxDecoration(
-        //     image: DecorationImage(
-        //         image: AssetImage('assets/cover.PNG'), fit: BoxFit.fill),
-        //   ),
-        // ),
       ),
       body: FutureBuilder(
         future: getUsers(),
