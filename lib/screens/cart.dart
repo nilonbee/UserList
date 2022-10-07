@@ -42,7 +42,7 @@ class _CartPageState extends State<CartPage> {
           ),
           body: Consumer<ProductViewModal>(builder: (context,data,child){
             return ListView.builder(
-                itemCount: productViewModel.cartList.length,
+                itemCount: data.cartList.length,
                 itemBuilder: (count,index){
                   return Container(
                     margin: EdgeInsets.all(8.0),
@@ -66,7 +66,7 @@ class _CartPageState extends State<CartPage> {
 
                         InkWell(
                           onTap: (){
-                            productViewModel.removeFromCart(data.cartList[index]);
+                            data.removeFromCart(data.cartList[index]);
                           },
                           child: Container(
                             padding: EdgeInsets.all(8.0),

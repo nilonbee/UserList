@@ -115,7 +115,7 @@ class _UserDetailState extends State<UserDetail> {
 
           ElevatedButton(
             onPressed: () {
-              productViewModal.addToCart(widget.product);
+              data.addToCart(widget.product);
               Navigator.push(context, MaterialPageRoute(builder: (context) => CartPage()));
             },
             child: Text('Add To Cart'),

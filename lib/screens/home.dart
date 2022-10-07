@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     iconSize: 22,
                     icon: const Icon(Icons.minimize_rounded),
                     onPressed:() {
-                      productViewModal.removeFromCart(data.productList[index]);
+                      data.removeFromCart(data.productList[index]);
                     })
                       :
                     IconButton(
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                        iconSize: 22,
                        icon: const Icon(Icons.add_shopping_cart_outlined),
                        onPressed:() {
-                         productViewModal.addToCart(data.productList[index]);
+                         data.addToCart(data.productList[index]);
                        }),
                      leading: CircleAvatar(
                        backgroundImage:
